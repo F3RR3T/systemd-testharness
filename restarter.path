@@ -1,0 +1,8 @@
+[Unit]
+Description=Trigger for restarter service
+
+[Path]
+PathChanged=/home/st33v/dev/systemd-testharness
+
+[Install]
+WantedBy=default.target

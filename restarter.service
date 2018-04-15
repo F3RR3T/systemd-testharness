@@ -1,0 +1,12 @@
+[Unit]
+Description=Test harness for restarting a service
+StartLimitIntervalSec=10
+StartLimitBurst=3
+
+[Service]
+#Type=oneshot
+Type=simple
+ExecStart=/usr/bin/echo "hello"
+
+RestartSec=2s
+Restart=on-success
